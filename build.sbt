@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
 "org.typelevel"  %% "cats-core" % "2.1.0",
 "org.typelevel"  %% "cats-effect" % "2.1.0",
 "dev.profunktor" %% "console4cats" % "0.8.1",
-  "org.manatki" %% "derevo-cats" % "0.10.5",
+"org.manatki" %% "derevo-cats" % "0.10.5",
 "org.manatki" %% "derevo-cats-tagless" % "0.10.5",
 "co.fs2" %% "fs2-core" % "2.2.2",
 "com.olegpy" %% "meow-mtl-core" % "0.4.0",
@@ -24,12 +24,13 @@ libraryDependencies ++= Seq(
 "io.estatico" %% "newtype" % "0.4.3",
 "eu.timepit" %% "refined" % "0.9.12",
 "com.github.julien-truffaut" %% "monocle-core" % "2.0.1",
-"com.github.julien-truffaut" %% "monocle-macro" % "2.0.1"
+"com.github.julien-truffaut" %% "monocle-macro" % "2.0.1",
+  "dev.profunktor" %% "redis4cats-effects"  % "1.0.0-RC2",
 )
 
 scalacOptions += "-Ymacro-annotations"
 
- resolvers += Classpaths.sbtPluginReleases
+resolvers += Classpaths.sbtPluginReleases
 
 publishArtifact in Test := false
 
